@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Username from '../components/Username.vue'
+import Username from '../components/username/Username.vue'
 </script>
 
 <template>
