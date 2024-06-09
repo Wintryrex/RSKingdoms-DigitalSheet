@@ -1,0 +1,37 @@
+
+$body-color: white;
+$input-placeholder-color: #adb5bd;
+$body-bg: #2C2C2C;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.container {
+    margin-top: 10%;
+}
+
+.card-header {
+    background: #a43d0a;
+}
+
+.card-body {
+    background: #303030;
+}
+
+.form-control,
+.form-control:focus {
+    box-shadow: none;
+    background: none;
+}
+.form-control {
+    border:none;
+    border-bottom: 2px dashed #ffffff80;
+    padding: 7px;
+    border-radius: 0;
+    outline: none;
+    color: white;
+}
+
+.form-control:focus {
+    border-bottom: 2px dashed #f8f9fa;
+}
+
