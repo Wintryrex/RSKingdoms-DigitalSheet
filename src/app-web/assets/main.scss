@@ -1,37 +1,35 @@
-
 $body-color: white;
 $input-placeholder-color: #adb5bd;
-$body-bg: #2C2C2C;
+$body-bg: #2c2c2c;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 .container {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 .card-header {
-    background: #a43d0a;
+  background: #a43d0a;
 }
 
 .card-body {
-    background: #303030;
+  background: #303030;
 }
 
 .form-control,
 .form-control:focus {
-    box-shadow: none;
-    background: none;
+  box-shadow: none;
+  background: none;
 }
 .form-control {
-    border:none;
-    border-bottom: 2px solid #ffffff80;
-    padding: 5px 0;
-    border-radius: 0;
-    outline: none;
-    color: white;
+  border: none;
+  border-bottom: 0.0625em solid #ffffff80;
+  padding: 0.3125em 0;
+  border-radius: 0;
+  outline: none;
+  color: white;
 }
 
 .form-control:focus {
-    border-bottom: 2px solid #f8f9fa;
+  border-bottom: 0.0625em solid #f8f9fa;
 }
-

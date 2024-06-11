@@ -1,11 +1,8 @@
-﻿import { describe, it, expect } from 'vitest'
-
+﻿import { it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import HelloWorld from '../username/Username.vue'
+import Username from '../username/Username.vue'
 
-describe('Username', () => {
-  it('renders properly', () => {
-    const wrapper = mount(HelloWorld)
-    expect(wrapper.text()).toContain('Name')
-  })
+it('renders component with right label', () => {
+  const wrapper = mount(Username)
+  expect(wrapper.text()).toContain('Name')
 })

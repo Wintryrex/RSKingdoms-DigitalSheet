@@ -5,7 +5,7 @@ import Username from '../components/username/Username.vue'
 <template>
   <main class="row">
     <div class="col-6">
-      <Username></Username>
+      <Username />
     </div>
   </main>
 </template>
