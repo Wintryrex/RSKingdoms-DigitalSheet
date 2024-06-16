@@ -10,7 +10,12 @@ defineProps({
   <div class="card">
     <div class="card-header">{{ title }}</div>
     <div class="card-body">
-      <input type="text" class="form-control" :placeholder="placeholder" :aria-label="ariaLabel" />
+      <input
+        type="text"
+        class="form-control rs-input"
+        :placeholder="placeholder"
+        :aria-label="ariaLabel"
+      />
     </div>
   </div>
 </template>

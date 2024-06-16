@@ -2,10 +2,17 @@ $body-color: white;
 $input-placeholder-color: #adb5bd;
 $body-bg: #2c2c2c;
 
+
+
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+  font-size: 1em;
+}
 
 .container {
   margin-top: 10%;
+  max-width: 1920px;
 }
 
 .card-header {
@@ -16,13 +23,13 @@ $body-bg: #2c2c2c;
   background: #303030;
 }
 
-.form-control,
-.form-control:focus {
+.rs-input,
+.rs-input:focus {
   box-shadow: none;
   background: none;
 }
 
-.form-control {
+.rs-input {
   border: none;
   border-bottom: 0.0625em solid #ffffff80;
   padding: 0.3125em 0;
@@ -31,6 +38,6 @@ $body-bg: #2c2c2c;
   color: white;
 }
 
-.form-control:focus {
+.rs-input:focus {
   border-bottom: 0.0625em solid #f8f9fa;
 }
