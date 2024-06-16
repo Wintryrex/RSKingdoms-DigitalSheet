@@ -1,8 +1,6 @@
 <script setup lang="ts">
 defineProps({
-  title: String,
-  placeholder: String,
-  ariaLabel: String
+  title: String
 })
 </script>
 
@@ -10,12 +8,7 @@ defineProps({
   <div class="card">
     <div class="card-header">{{ title }}</div>
     <div class="card-body">
-      <input
-        type="text"
-        class="form-control rs-input"
-        :placeholder="placeholder"
-        :aria-label="ariaLabel"
-      />
+      <slot></slot>
     </div>
   </div>
 </template>
