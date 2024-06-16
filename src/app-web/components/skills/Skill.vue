@@ -47,7 +47,7 @@ watch(finishedXpSlots, handleXpChange)
           @click="decreaseLevel"
           class="btn btn-outline-secondary"
           type="button"
-          :disabled="currentLevel <= 0"
+          :disabled="currentLevel <= 1"
         >
           -
         </button>
