@@ -105,6 +105,9 @@ watch(finishedXpSlots, handleXpChange)
 }
 
 .skill-checkbox-container {
+  $checkbox-size: 4em;
+  $labelPadding: 0.4em;
+
   input[type='checkbox'] {
     -webkit-appearance: none;
     appearance: none;
@@ -139,13 +142,13 @@ watch(finishedXpSlots, handleXpChange)
   label {
     position: relative;
     cursor: pointer;
-    padding: 0.4em;
+    padding: $labelPadding;
   }
 
   label span {
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: calc(3em / 2 + 6.4px);
+    left: calc(3em / 2 + 6.4px);
     color: white;
     display: inline-block;
     line-height: 1;
@@ -155,6 +158,12 @@ watch(finishedXpSlots, handleXpChange)
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .skill-checkbox-container {
+    margin-top: 1em;
   }
 }
 </style>
