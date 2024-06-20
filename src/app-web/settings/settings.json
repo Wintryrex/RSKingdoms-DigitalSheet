@@ -1,0 +1,44 @@
+﻿{
+  "skills": [
+    {
+      "title": "Attack",
+      "src": "/attack.svg",
+      "alt": "Attack skill"
+    },
+    {
+      "title": "Ranged",
+      "src": "/range.svg",
+      "alt": "Range skill"
+    },
+    {
+      "title": "Magic",
+      "src": "/magic.svg",
+      "alt": "Magic skill"
+    },
+    {
+      "title": "Defence",
+      "src": "/defense.svg",
+      "alt": "Defence skill"
+    },
+    {
+      "title": "Thieving",
+      "src": "/thieving.svg",
+      "alt": "Thieving skill"
+    },
+    {
+      "title": "Gathering",
+      "src": "/gathering.svg",
+      "alt": "Gathering skill"
+    },
+    {
+      "title": "Crafting",
+      "src": "/crafting.svg",
+      "alt": "Crafting skill"
+    },
+    {
+      "title": "Cooking",
+      "src": "/cooking.svg",
+      "alt": "Cooking skill"
+    }
+  ]
+}

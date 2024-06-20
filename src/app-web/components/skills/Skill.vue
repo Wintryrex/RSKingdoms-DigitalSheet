@@ -1,11 +1,8 @@
 ﻿<script setup lang="ts">
 import { ref, watch } from 'vue'
+import type SkillType from './Skill.ts'
 
-defineProps({
-  title: String,
-  src: String,
-  alt: String
-})
+defineProps<SkillType>()
 
 const finishedXpSlots = ref([])
 const currentLevel = ref(1)
