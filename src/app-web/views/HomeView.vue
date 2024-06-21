@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Card from '../components/common/Card.vue'
-import Skills from '../components/skills/Skills.vue'
+import Card from '../components/common/CardPanel.vue'
+import Skills from '../components/skills/SkillsList.vue'
 </script>
 
 <template>

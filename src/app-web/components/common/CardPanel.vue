@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  title: String
-})
+import type CardPanel from './CardPanel.ts'
+
+defineProps<CardPanel>()
 </script>
 
 <template>

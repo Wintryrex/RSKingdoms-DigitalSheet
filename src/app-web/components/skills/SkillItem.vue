@@ -1,15 +1,21 @@
 ﻿<script setup lang="ts">
 import { ref, watch } from 'vue'
-import type SkillType from './Skill.ts'
+import { v4 as uuidv4 } from 'uuid'
+import type SkillType from './SkillItem.ts'
 
 defineProps<SkillType>()
 
 const finishedXpSlots = ref([])
 const currentLevel = ref(1)
-const xpSlots = 3
+const xpSlots = Array.from({ length: 3 }, () => {
+  return {
+    id: uuidv4(),
+    text: 'XP'
+  }
+})
 
 const handleXpChange = () => {
-  if (finishedXpSlots.value.length === xpSlots) {
+  if (finishedXpSlots.value.length === xpSlots.length) {
     finishedXpSlots.value = []
     currentLevel.value++
   }
@@ -58,10 +64,10 @@ watch(finishedXpSlots, handleXpChange)
       </div>
     </div>
     <div class="col-lg-4 offset-lg-1 skill-checkbox-container align-self-center">
-      <template v-for="xp in xpSlots">
+      <template v-for="xp in xpSlots" :key="xp.id">
         <label>
           <input type="checkbox" :value="xp" v-model="finishedXpSlots" />
-          <span>XP</span>
+          <span>{{ xp.text }}</span>
         </label>
       </template>
     </div>

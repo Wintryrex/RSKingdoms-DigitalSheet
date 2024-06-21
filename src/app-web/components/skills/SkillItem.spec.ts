@@ -1,14 +1,16 @@
 ﻿import { it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import Skill from '../skills/Skill.vue'
+import Skill from '../skills/SkillItem.vue'
 
-it('Should display a Skill with the specified icon source', () => {
+it('displays a Skill with the specified icon source', () => {
+  const id = '1'
   const skillName = 'Attack'
   const imagePath = '/img/attack.svg'
   const alternativeImageText = 'An icon of the skill Attack '
 
   const wrapper = mount(Skill, {
     props: {
+      id: id,
       title: skillName,
       src: imagePath,
       alt: alternativeImageText

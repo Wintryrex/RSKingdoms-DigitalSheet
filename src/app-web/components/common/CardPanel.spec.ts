@@ -1,9 +1,9 @@
 ﻿import { it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import Card from '../common/Card.vue'
+import CardPanel from '../common/CardPanel.vue'
 
 it('renders component with the right label', () => {
-  const wrapper = mount(Card, {
+  const wrapper = mount(CardPanel, {
     props: {
       title: 'Name',
       placeholder: 'Username',

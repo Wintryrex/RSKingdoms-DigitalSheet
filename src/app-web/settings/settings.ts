@@ -24,6 +24,6 @@ const isSkill = (obj: unknown): obj is Skill => {
   )
 }
 
-export interface Settings {
+export default interface Settings {
   skills: Skill[]
 }
