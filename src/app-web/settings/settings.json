@@ -1,44 +1,44 @@
 ﻿{
   "skills": [
     {
-      "title": "Attack",
-      "src": "/attack.svg",
-      "alt": "Attack skill"
+      "title": "Melee",
+      "src": "/melee.svg",
+      "alt": "Custom made sword symbolizing the Attack skill from Runescape"
     },
     {
       "title": "Ranged",
       "src": "/range.svg",
-      "alt": "Range skill"
+      "alt": "Custom made bow which symbolizes the Range skill from Runescape"
     },
     {
       "title": "Magic",
       "src": "/magic.svg",
-      "alt": "Magic skill"
+      "alt": "Custom made wizard hat which symbolizes the Magic skill from Runescape"
     },
     {
       "title": "Defence",
       "src": "/defense.svg",
-      "alt": "Defence skill"
+      "alt": "Custom made shield which symbolizes the Defence skill from Runescape"
     },
     {
       "title": "Thieving",
       "src": "/thieving.svg",
-      "alt": "Thieving skill"
+      "alt": "Custom made mask which symbolizes the thieving skill from Runescape"
     },
     {
       "title": "Gathering",
       "src": "/gathering.svg",
-      "alt": "Gathering skill"
+      "alt": "Custom made bag which symbolizes gathering skills from Runescape"
     },
     {
       "title": "Crafting",
       "src": "/crafting.svg",
-      "alt": "Crafting skill"
+      "alt": "Custom made hammer and chisel which symbolizes the crafting skill from Runescape"
     },
     {
       "title": "Cooking",
       "src": "/cooking.svg",
-      "alt": "Cooking skill"
+      "alt": "Custom made cookware which symbolizes the cooking skill from Runescape"
     }
   ]
 }

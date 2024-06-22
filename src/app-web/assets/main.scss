@@ -6,13 +6,9 @@ $body-bg: #2c2c2c;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-body {
-  font-size: 1em;
-}
-
 .container {
   margin-top: 10%;
-  max-width: 1920px;
+  max-width: 120em;
 }
 
 .card-header {

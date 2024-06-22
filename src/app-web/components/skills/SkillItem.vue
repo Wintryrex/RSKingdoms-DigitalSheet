@@ -135,7 +135,7 @@ watch(finishedXpSlots, handleXpChange)
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     background: #a43d0a;
-    outline: 1px #a43d0a solid;
+    outline: 0.0625em #a43d0a solid;
   }
 
   input[type='checkbox']:checked::before {
@@ -150,8 +150,8 @@ watch(finishedXpSlots, handleXpChange)
 
   label span {
     position: absolute;
-    top: calc(3em / 2 + 6.4px);
-    left: calc(3em / 2 + 6.4px);
+    top: calc(3em / 2 + 0.4em);
+    left: calc(3em / 2 + 0.4em);
     color: white;
     display: inline-block;
     line-height: 1;
@@ -164,7 +164,7 @@ watch(finishedXpSlots, handleXpChange)
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 62em) {
   .skill-checkbox-container {
     margin-top: 1em;
   }
