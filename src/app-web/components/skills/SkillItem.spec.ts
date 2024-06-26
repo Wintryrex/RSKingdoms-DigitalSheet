@@ -1,6 +1,6 @@
 ﻿import { it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import SkillItem from '../skills/SkillItem.vue'
+import SkillItem from '@/components/skills/SkillItem.vue'
 
 it('displays a Skill with the specified icon source', () => {
   const id = '1'

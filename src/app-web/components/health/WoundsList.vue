@@ -1,6 +1,6 @@
 ﻿<script setup lang="ts">
 import { reactive, ref } from 'vue'
-import CardPanel from '../../common/CardPanel.vue'
+import CardPanel from '@/components/common/CardPanel.vue'
 import { useCharacterStore } from '@/stores/characterStore'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -22,13 +22,13 @@ const hearts = reactive([
 const characterStore = useCharacterStore()
 
 const toggleHealthPoint = (index: number) => {
+  hearts[index].full = !hearts[index].full
+
   if (hearts[index].full) {
     characterStore.increaseHealth()
   } else {
     characterStore.decreaseHealth()
   }
-
-  hearts[index].full = !hearts[index].full
 }
 </script>
 

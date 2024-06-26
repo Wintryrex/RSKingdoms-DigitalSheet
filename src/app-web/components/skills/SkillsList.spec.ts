@@ -1,6 +1,6 @@
 ﻿import { it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import SkillsList from '../skills/SkillsList.vue'
+import SkillsList from '@/components/skills/SkillsList.vue'
 
 it('displays a list of skills', () => {
   const wrapper = mount(SkillsList, {

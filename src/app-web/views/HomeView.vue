@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Card from '../components/common/CardPanel.vue'
-import Skills from '../components/skills/SkillsList.vue'
-import WoundsList from '../components/health/wounds/WoundsList.vue'
+import Card from '@/components/common/CardPanel.vue'
+import Skills from '@/components/skills/SkillsList.vue'
+import WoundsList from '@/components/health/WoundsList.vue'
 </script>
 
 <template>
