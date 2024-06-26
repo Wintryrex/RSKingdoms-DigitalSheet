@@ -1,8 +1,9 @@
 ﻿import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 
 export const useCharacterStore = defineStore('character', () => {
   const healthPoints = ref(3)
+
   const increaseHealth = () => {
     healthPoints.value++
   }
