@@ -1,25 +1,17 @@
 ﻿<script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
+import { v4 as uuidv4 } from 'uuid'
 import CardPanel from '@/components/common/CardPanel.vue'
 import { useCharacterStore } from '@/stores/characterStore'
-import { v4 as uuidv4 } from 'uuid'
-
-const hearts = reactive([
-  {
-    id: uuidv4(),
-    full: true
-  },
-  {
-    id: uuidv4(),
-    full: true
-  },
-  {
-    id: uuidv4(),
-    full: true
-  }
-])
 
 const characterStore = useCharacterStore()
+
+const hearts = reactive(
+  Array.from({ length: characterStore.healthPoints }, () => ({
+    id: uuidv4(),
+    full: true
+  }))
+)
 
 const toggleHealthPoint = (index: number) => {
   hearts[index].full = !hearts[index].full
