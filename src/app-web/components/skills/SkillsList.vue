@@ -1,11 +1,11 @@
 ﻿<script setup lang="ts">
 import { inject, onBeforeMount } from 'vue'
 import { v4 as uuidv4 } from 'uuid'
-import SkillItem from './SkillItem.vue'
-import type SkillItemType from './SkillItem.ts'
-import Card from '../common/CardPanel.vue'
-import { isSettings } from '../../settings/settings'
-import type Settings from '../../settings/settings'
+import SkillItem from '@/components/skills/SkillItem.vue'
+import type SkillItemType from '@/components/skills/SkillItem.ts'
+import Card from '@/components/common/CardPanel.vue'
+import { isSettings } from '@/settings/settings'
+import type Settings from '@/settings/settings'
 
 let skills: SkillItemType[] = []
 

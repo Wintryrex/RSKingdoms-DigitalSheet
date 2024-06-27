@@ -1,7 +1,7 @@
 ﻿<script setup lang="ts">
 import { ref, watch } from 'vue'
 import { v4 as uuidv4 } from 'uuid'
-import type SkillType from './SkillItem.ts'
+import type SkillType from '@/components/skills/SkillItem.ts'
 
 defineProps<SkillType>()
 
