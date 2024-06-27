@@ -167,6 +167,8 @@ watch(finishedXpSlots, handleXpChange)
 @media only screen and (max-width: 62em) {
   .skill-checkbox-container {
     margin-top: 1em;
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
